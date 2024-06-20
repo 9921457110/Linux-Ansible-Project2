@@ -1,11 +1,12 @@
 1. Automated Server Configuration with Ansible
 
-**Description:** Create an Ansible playbook to automate the setup and configuration of RHEL servers.
+**Description:**
+Create an Ansible playbook to automate the setup and configuration of RHEL servers.
 
-**Example Playbook (setup.yml):**yaml
+Example Playbook (setup.yml):**yaml
 ---
 - name: Configure RHEL Servers
-  hosts: rhel_servers
+  hosts: rhel_servers #your target machine ip or name
   become: true
   tasks:
     - name: Ensure Apache is installed
